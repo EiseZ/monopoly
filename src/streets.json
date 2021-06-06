@@ -1,0 +1,202 @@
+{
+  "streets": [
+    {
+      "naam": "Dorpstraat",
+      "kleur": "Donkerblauw",
+      "aankoopprijs": 60,
+      "huisprijs": 50,
+      "huurprijzen": [2, 10, 30, 90, 160, 250],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Brink",
+      "kleur": "Donkerblauw",
+      "aankoopprijs": 60,
+      "huisprijs": 50,
+      "huurprijzen": [4, 20, 60, 180, 320, 450],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Steenstraat",
+      "kleur": "Lichtblauw",
+      "aankoopprijs": 100,
+      "huisprijs": 50,
+      "huurprijzen": [6, 30, 90, 270, 400, 550],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Ketelstaat",
+      "kleur": "Lichtblauw",
+      "aankoopprijs": 100,
+      "huisprijs": 50,
+      "huurprijzen": [6, 30, 90, 270, 400, 550],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Velperplein",
+      "kleur": "Lichtblauw",
+      "aankoopprijs": 120,
+      "huisprijs": 50,
+      "huurprijzen": [8, 40, 120, 360, 450, 600],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Barteljorisstraat",
+      "kleur": "paars",
+      "aankoopprijs": 140,
+      "huisprijs": 100,
+      "huurprijzen": [10, 50, 150, 450, 625, 750],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Zijlweg",
+      "kleur": "paars",
+      "aankoopprijs": 140,
+      "huisprijs": 100,
+      "huurprijzen": [10, 50, 150, 450, 625, 750],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Houtstraat",
+      "kleur": "paars",
+      "aankoopprijs": 160,
+      "huisprijs": 100,
+      "huurprijzen": [12, 60, 180, 500, 700, 900],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Neude",
+      "kleur": "oranje",
+      "aankoopprijs": 180,
+      "huisprijs": 100,
+      "huurprijzen": [14, 70, 200, 550, 750, 950],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Biltstraat",
+      "kleur": "oranje",
+      "aankoopprijs": 180,
+      "huisprijs": 100,
+      "huurprijzen": [14, 70, 200, 550, 750, 950],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Vreeburg",
+      "kleur": "oranje",
+      "aankoopprijs": 200,
+      "huisprijs": 100,
+      "huurprijzen": [16, 80, 220, 600, 800, 1000],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "A-Kerkhof",
+      "kleur": "rood",
+      "aankoopprijs": 220,
+      "huisprijs": 150,
+      "huurprijzen": [18, 90, 250, 700, 875, 1050],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Grote markt",
+      "kleur": "rood",
+      "aankoopprijs": 220,
+      "huisprijs": 150,
+      "huurprijzen": [18, 90, 250, 700, 875, 1050],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Heerestraat",
+      "kleur": "rood",
+      "aankoopprijs": 240,
+      "huisprijs": 150,
+      "huurprijzen": [20, 100, 300, 750, 925, 1100],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Spui",
+      "kleur": "geel",
+      "aankoopprijs": 260,
+      "huisprijs": 150,
+      "huurprijzen": [22, 110, 330, 800, 975, 1150],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Plein",
+      "kleur": "geel",
+      "aankoopprijs": 260,
+      "huisprijs": 150,
+      "huurprijzen": [22, 110, 330, 800, 975, 1150],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Lange poten",
+      "kleur": "geel",
+      "aankoopprijs": 280,
+      "huisprijs": 150,
+      "huurprijzen": [24, 120, 360, 850, 1025, 1200],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Hofplein",
+      "kleur": "groen",
+      "aankoopprijs": 300,
+      "huisprijs": 200,
+      "huurprijzen": [26, 130, 390, 900, 1100, 1275],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Blaak",
+      "kleur": "groen",
+      "aankoopprijs": 300,
+      "huisprijs": 200,
+      "huurprijzen": [26, 130, 390, 900, 1100, 1275],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Coolsingel",
+      "kleur": "groen",
+      "aankoopprijs": 320,
+      "huisprijs": 200,
+      "huurprijzen": [28, 150, 450, 1000, 1200, 1400],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Leidsestraat",
+      "kleur": "blauw",
+      "aankoopprijs": 350,
+      "huisprijs": 200,
+      "huurprijzen": [35, 175, 500, 1100, 1300, 1500],
+      "tier": 0,
+      "geliquideerd": false
+    },
+    {
+      "naam": "Kalverstraat",
+      "kleur": "blauw",
+      "aankoopprijs": 400,
+      "huisprijs": 200,
+      "huurprijzen": [50, 200, 600, 1400, 1700, 2000],
+      "tier": 0,
+      "geliquideerd": false
+    }
+  ]
+}

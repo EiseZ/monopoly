@@ -1,0 +1,11 @@
+Street[]
+    | "station"
+    | "belasting-200"
+    | "belasting-100"
+    | "kans"
+    | "stroom"
+    | "fonds"
+    | "gevangenis"
+    | "naar gevangenis"
+    | "parkeren"
+    | String
