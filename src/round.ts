@@ -1,6 +1,7 @@
 import { board, buyHouses, fonds, kans, station, straat } from "./board";
 import { players } from "./initialize";
 import Player from "./player";
+import fs from "fs";
 
 export let end = false;
 
@@ -61,6 +62,12 @@ function movePlayer(player: Player) {
     `      Speler gooit: ${dice1} en ${dice2}. Totaal: ${dice1 + dice2}`
   );
   player.boardPos = (player.boardPos + dice1 + dice2) % board.length;
+  fs.writeFile(
+    "boardpos.csv",
+    `${player.boardPos}\n`,
+    { flag: "a" },
+    (_: any) => {}
+  );
   if (typeof board[player.boardPos] === "string") {
     switch (board[player.boardPos]) {
       case "start":

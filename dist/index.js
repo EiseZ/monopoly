@@ -4,15 +4,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const round_1 = require("./round");
-const readline_1 = __importDefault(require("readline"));
-const rl = readline_1.default.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
-let numberOfRounds = 20;
-let startingMoney = 1500;
+const initialize_1 = require("./initialize");
+const fs_1 = __importDefault(require("fs"));
+const numberOfRounds = 50;
 function main() {
-    initializeGame();
+    initialize_1.initializeGame();
     let i;
     for (i = 1; i <= numberOfRounds; i++) {
         if (!round_1.end) {
@@ -21,19 +17,26 @@ function main() {
         }
         else {
             console.log("\n\n\n Er is een winnaar \n\n\n");
+            initialize_1.players.forEach((player) => {
+                if (!player.failliet && player.money != undefined) {
+                    fs_1.default.writeFile("output", `De winnaar was speler ${player.number}.\n\n\n\n`, { flag: "a" }, (_) => { });
+                }
+                else if (player.money != undefined) {
+                    fs_1.default.writeFile("output", `Er was een error, dit spel telt niet.\n\n\n\n`, { flag: "a" }, (_) => { });
+                }
+            });
             break;
         }
     }
-}
-function initializeGame() {
-    console.log("Hoeveel rondes mogen er maximaal gespeeld worden?");
-    rl.question("Hoeveel rondes mogen er maximaal gespeeld worden?", (awnser) => {
-        numberOfRounds = Number(awnser);
+    if (!round_1.end) {
+        fs_1.default.writeFile("output", `Er was geen winnaar na ${numberOfRounds} rondes.\n\n\n\n`, { flag: "a" }, (_) => { });
+    }
+    initialize_1.players.forEach((player) => {
+        if (!player.failliet && player.money != undefined) {
+            fs_1.default.writeFile("winners.csv", `buyStreet, ${player.ai.buyStreet}\nbuyHouse, ${player.ai.buyHouse}\nbuyStation, ${player.ai.buyStation}\nauctionMaxPrice, ${player.ai.auctionMaxPrice}\n\n`, { flag: "a" }, (_) => { });
+        }
     });
-    rl.question("Met hoeveel geld moeten de spelers starten?", (awnser) => {
-        startingMoney = Number(awnser);
-    });
-    console.log("Het spel is aan het laden...");
 }
+fs_1.default.writeFile("output", `Het spel begint:\n`, { flag: "a" }, (_) => { });
 main();
 //# sourceMappingURL=index.js.map

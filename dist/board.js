@@ -430,7 +430,8 @@ function auction(playerSelling, buildingNumber, originalPrice, dir) {
                         });
                         break;
                     case "sameAsNormal":
-                        if (biddingPrice <= originalPrice) {
+                        if (biddingPrice <= originalPrice &&
+                            subject.money - biddingPrice + 10 > 0) {
                             if (playersInAuction.length > 1) {
                                 biddingPrice += 10;
                                 console.log(`         Speler ${i + 1} bied ${biddingPrice}.`);
@@ -447,7 +448,8 @@ function auction(playerSelling, buildingNumber, originalPrice, dir) {
                         }
                         break;
                     case "10PercentMore":
-                        if (biddingPrice <= originalPrice * 1.1) {
+                        if (biddingPrice <= originalPrice * 1.1 &&
+                            subject.money - biddingPrice + 10 > 0) {
                             if (playersInAuction.length > 1) {
                                 biddingPrice += 10;
                                 console.log(`         Speler ${i + 1} bied ${biddingPrice}.`);
@@ -464,7 +466,8 @@ function auction(playerSelling, buildingNumber, originalPrice, dir) {
                         }
                         break;
                     case "20PercentMore":
-                        if (biddingPrice <= originalPrice * 1.2) {
+                        if (biddingPrice <= originalPrice * 1.2 &&
+                            subject.money - biddingPrice + 10 > 0) {
                             if (playersInAuction.length > 1) {
                                 biddingPrice += 10;
                                 console.log(`         Speler ${i + 1} bied ${biddingPrice}.`);
@@ -481,7 +484,8 @@ function auction(playerSelling, buildingNumber, originalPrice, dir) {
                         }
                         break;
                     case "30PercentMore":
-                        if (biddingPrice <= originalPrice * 1.3) {
+                        if (biddingPrice <= originalPrice * 1.3 &&
+                            subject.money - biddingPrice + 10 > 0) {
                             if (playersInAuction.length > 1) {
                                 biddingPrice += 10;
                                 console.log(`         Speler ${i + 1} bied ${biddingPrice}.`);
@@ -498,7 +502,8 @@ function auction(playerSelling, buildingNumber, originalPrice, dir) {
                         }
                         break;
                     case "40PercentMore":
-                        if (biddingPrice <= originalPrice * 1.4) {
+                        if (biddingPrice <= originalPrice * 1.4 &&
+                            subject.money - biddingPrice + 10 > 0) {
                             if (playersInAuction.length > 1) {
                                 biddingPrice += 10;
                                 console.log(`         Speler ${i + 1} bied ${biddingPrice}.`);
@@ -515,7 +520,8 @@ function auction(playerSelling, buildingNumber, originalPrice, dir) {
                         }
                         break;
                     case "50PercentMore":
-                        if (biddingPrice <= originalPrice * 1.5) {
+                        if (biddingPrice <= originalPrice * 1.5 &&
+                            subject.money - biddingPrice + 10 > 0) {
                             if (playersInAuction.length > 1) {
                                 biddingPrice += 10;
                                 console.log(`         Speler ${i + 1} bied ${biddingPrice}.`);
@@ -532,7 +538,8 @@ function auction(playerSelling, buildingNumber, originalPrice, dir) {
                         }
                         break;
                     case "60PercentMore":
-                        if (biddingPrice <= originalPrice * 1.6) {
+                        if (biddingPrice <= originalPrice * 1.6 &&
+                            subject.money - biddingPrice + 10 > 0) {
                             if (playersInAuction.length > 1) {
                                 biddingPrice += 10;
                                 console.log(`         Speler ${i + 1} bied ${biddingPrice}.`);
@@ -549,7 +556,8 @@ function auction(playerSelling, buildingNumber, originalPrice, dir) {
                         }
                         break;
                     case "70PercentMore":
-                        if (biddingPrice <= originalPrice * 1.7) {
+                        if (biddingPrice <= originalPrice * 1.7 &&
+                            subject.money - biddingPrice + 10 > 0) {
                             if (playersInAuction.length > 1) {
                                 biddingPrice += 10;
                                 console.log(`         Speler ${i + 1} bied ${biddingPrice}.`);
@@ -566,7 +574,8 @@ function auction(playerSelling, buildingNumber, originalPrice, dir) {
                         }
                         break;
                     case "80PercentMore":
-                        if (biddingPrice <= originalPrice * 1.8) {
+                        if (biddingPrice <= originalPrice * 1.8 &&
+                            subject.money - biddingPrice + 10 > 0) {
                             if (playersInAuction.length > 1) {
                                 biddingPrice += 10;
                                 console.log(`         Speler ${i + 1} bied ${biddingPrice}.`);
@@ -583,7 +592,8 @@ function auction(playerSelling, buildingNumber, originalPrice, dir) {
                         }
                         break;
                     case "90PercentMore":
-                        if (biddingPrice <= originalPrice * 1.9) {
+                        if (biddingPrice <= originalPrice * 1.9 &&
+                            subject.money - biddingPrice + 10 > 0) {
                             if (playersInAuction.length > 1) {
                                 biddingPrice += 10;
                                 console.log(`         Speler ${i + 1} bied ${biddingPrice}.`);
@@ -600,7 +610,8 @@ function auction(playerSelling, buildingNumber, originalPrice, dir) {
                         }
                         break;
                     case "double":
-                        if (biddingPrice <= originalPrice * 2) {
+                        if (biddingPrice <= originalPrice * 2 &&
+                            subject.money - biddingPrice + 10 > 0) {
                             biddingPrice += 10;
                             console.log(`         Speler ${i + 1} bied ${biddingPrice}.`);
                         }
@@ -612,7 +623,8 @@ function auction(playerSelling, buildingNumber, originalPrice, dir) {
                         }
                         break;
                     case "triple":
-                        if (biddingPrice <= originalPrice * 3) {
+                        if (biddingPrice <= originalPrice * 3 &&
+                            subject.money - biddingPrice + 10 > 0) {
                             if (playersInAuction.length > 1) {
                                 biddingPrice += 10;
                                 console.log(`         Speler ${i + 1} bied ${biddingPrice}.`);
@@ -629,7 +641,8 @@ function auction(playerSelling, buildingNumber, originalPrice, dir) {
                         }
                         break;
                     case "quadruple":
-                        if (biddingPrice <= originalPrice * 4) {
+                        if (biddingPrice <= originalPrice * 4 &&
+                            subject.money - biddingPrice + 10 > 0) {
                             if (playersInAuction.length > 1) {
                                 biddingPrice += 10;
                                 console.log(`         Speler ${i + 1} bied ${biddingPrice}.`);
@@ -646,7 +659,8 @@ function auction(playerSelling, buildingNumber, originalPrice, dir) {
                         }
                         break;
                     case "buyAlways":
-                        if (playersInAuction.length > 1) {
+                        if (playersInAuction.length > 1 &&
+                            subject.money - biddingPrice + 10 > 0) {
                             biddingPrice += 10;
                             console.log(`         Speler ${i + 1} bied ${biddingPrice}.`);
                         }
@@ -693,6 +707,24 @@ function buyHouses(currentPlayer) {
         case "always":
             currentPlayer.ownedNumbers.forEach((number) => {
                 if (typeof exports.board[number] === "object") {
+                    let buy = true;
+                    let sameColorStreets = [];
+                    let sameColorStreetsBoardPos = [];
+                    exports.streets.forEach((streetElement) => {
+                        if (streetElement.kleur === exports.board[number].kleur) {
+                            sameColorStreets.push(streetElement);
+                            exports.board.forEach((element, i) => {
+                                if (element == streetElement) {
+                                    sameColorStreetsBoardPos.push(i);
+                                }
+                            });
+                        }
+                    });
+                    sameColorStreetsBoardPos.forEach((boardPos) => {
+                        if (!currentPlayer.ownedNumbers.includes(boardPos)) {
+                            buy = false;
+                        }
+                    });
                     if (exports.board[number].geliquideerd &&
                         currentPlayer.money - exports.board[number].huisprijs > 0) {
                         console.log(`      De speler koopt ${exports.board[number].naam} terug van liquidatie voor ${exports.board[number].aankoopprijs / 2} euro.`);
@@ -701,10 +733,11 @@ function buyHouses(currentPlayer) {
                     }
                     else if (currentPlayer.money - exports.board[number].huisprijs > 0 &&
                         exports.board[number].tier < 5 &&
-                        !exports.board[number].geliquideerd) {
+                        !exports.board[number].geliquideerd &&
+                        buy) {
                         console.log(`      De speler kocht een huis op de straat: ${exports.board[number].naam} voor ${exports.board[number].huisprijs} euro. Er staan nu ${exports.board[number].tier + 1} huizen op die straat.`);
                         exports.board[number].tier++;
-                        currentPlayer.money - exports.board[number].huisprijs;
+                        currentPlayer.money -= exports.board[number].huisprijs;
                     }
                 }
             });
@@ -712,6 +745,24 @@ function buyHouses(currentPlayer) {
         case "upTo1":
             currentPlayer.ownedNumbers.forEach((number) => {
                 if (typeof exports.board[number] === "object") {
+                    let buy = true;
+                    let sameColorStreets = [];
+                    let sameColorStreetsBoardPos = [];
+                    exports.streets.forEach((streetElement) => {
+                        if (streetElement.kleur === exports.board[number].kleur) {
+                            sameColorStreets.push(streetElement);
+                            exports.board.forEach((element, i) => {
+                                if (element == streetElement) {
+                                    sameColorStreetsBoardPos.push(i);
+                                }
+                            });
+                        }
+                    });
+                    sameColorStreetsBoardPos.forEach((boardPos) => {
+                        if (!currentPlayer.ownedNumbers.includes(boardPos)) {
+                            buy = false;
+                        }
+                    });
                     if (exports.board[number].geliquideerd &&
                         currentPlayer.money - exports.board[number].huisprijs > 0) {
                         console.log(`      De speler koopt ${exports.board[number].naam} terug van liquidatie voor ${exports.board[number].aankoopprijs / 2} euro.`);
@@ -720,10 +771,11 @@ function buyHouses(currentPlayer) {
                     }
                     else if (currentPlayer.money - exports.board[number].huisprijs > 0 &&
                         exports.board[number].tier < 1 &&
-                        !exports.board[number].geliquideerd) {
+                        !exports.board[number].geliquideerd &&
+                        buy) {
                         console.log(`      De speler kocht een huis op de straat: ${exports.board[number].naam} voor ${exports.board[number].huisprijs} euro. Er staan nu ${exports.board[number].tier + 1} huizen op die straat.`);
                         exports.board[number].tier++;
-                        currentPlayer.money - exports.board[number].huisprijs;
+                        currentPlayer.money -= exports.board[number].huisprijs;
                     }
                 }
             });
@@ -731,6 +783,24 @@ function buyHouses(currentPlayer) {
         case "upTo2":
             currentPlayer.ownedNumbers.forEach((number) => {
                 if (typeof exports.board[number] === "object") {
+                    let buy = true;
+                    let sameColorStreets = [];
+                    let sameColorStreetsBoardPos = [];
+                    exports.streets.forEach((streetElement) => {
+                        if (streetElement.kleur === exports.board[number].kleur) {
+                            sameColorStreets.push(streetElement);
+                            exports.board.forEach((element, i) => {
+                                if (element == streetElement) {
+                                    sameColorStreetsBoardPos.push(i);
+                                }
+                            });
+                        }
+                    });
+                    sameColorStreetsBoardPos.forEach((boardPos) => {
+                        if (!currentPlayer.ownedNumbers.includes(boardPos)) {
+                            buy = false;
+                        }
+                    });
                     if (exports.board[number].geliquideerd &&
                         currentPlayer.money - exports.board[number].huisprijs > 0) {
                         console.log(`      De speler koopt ${exports.board[number].naam} terug van liquidatie voor ${exports.board[number].aankoopprijs / 2} euro.`);
@@ -739,7 +809,8 @@ function buyHouses(currentPlayer) {
                     }
                     else if (currentPlayer.money - exports.board[number].huisprijs > 0 &&
                         exports.board[number].tier < 2 &&
-                        !exports.board[number].geliquideerd) {
+                        !exports.board[number].geliquideerd &&
+                        buy) {
                         console.log(`      De speler kocht een huis op de straat: ${exports.board[number].naam} voor ${exports.board[number].huisprijs} euro. Er staan nu ${exports.board[number].tier + 1} huizen op die straat.`);
                         exports.board[number].tier++;
                         currentPlayer.money - exports.board[number].huisprijs;
@@ -750,6 +821,24 @@ function buyHouses(currentPlayer) {
         case "upTo3":
             currentPlayer.ownedNumbers.forEach((number) => {
                 if (typeof exports.board[number] === "object") {
+                    let buy = true;
+                    let sameColorStreets = [];
+                    let sameColorStreetsBoardPos = [];
+                    exports.streets.forEach((streetElement) => {
+                        if (streetElement.kleur === exports.board[number].kleur) {
+                            sameColorStreets.push(streetElement);
+                            exports.board.forEach((element, i) => {
+                                if (element == streetElement) {
+                                    sameColorStreetsBoardPos.push(i);
+                                }
+                            });
+                        }
+                    });
+                    sameColorStreetsBoardPos.forEach((boardPos) => {
+                        if (!currentPlayer.ownedNumbers.includes(boardPos)) {
+                            buy = false;
+                        }
+                    });
                     if (exports.board[number].geliquideerd &&
                         currentPlayer.money - exports.board[number].huisprijs > 0) {
                         console.log(`      De speler koopt ${exports.board[number].naam} terug van liquidatie voor ${exports.board[number].aankoopprijs / 2} euro.`);
@@ -758,10 +847,11 @@ function buyHouses(currentPlayer) {
                     }
                     else if (currentPlayer.money - exports.board[number].huisprijs > 0 &&
                         exports.board[number].tier < 3 &&
-                        !exports.board[number].geliquideerd) {
+                        !exports.board[number].geliquideerd &&
+                        buy) {
                         console.log(`      De speler kocht een huis op de straat: ${exports.board[number].naam} voor ${exports.board[number].huisprijs} euro. Er staan nu ${exports.board[number].tier + 1} huizen op die straat.`);
                         exports.board[number].tier++;
-                        currentPlayer.money - exports.board[number].huisprijs;
+                        currentPlayer.money -= exports.board[number].huisprijs;
                     }
                 }
             });
@@ -769,6 +859,24 @@ function buyHouses(currentPlayer) {
         case "upTo4":
             currentPlayer.ownedNumbers.forEach((number) => {
                 if (typeof exports.board[number] === "object") {
+                    let buy = true;
+                    let sameColorStreets = [];
+                    let sameColorStreetsBoardPos = [];
+                    exports.streets.forEach((streetElement) => {
+                        if (streetElement.kleur === exports.board[number].kleur) {
+                            sameColorStreets.push(streetElement);
+                            exports.board.forEach((element, i) => {
+                                if (element == streetElement) {
+                                    sameColorStreetsBoardPos.push(i);
+                                }
+                            });
+                        }
+                    });
+                    sameColorStreetsBoardPos.forEach((boardPos) => {
+                        if (!currentPlayer.ownedNumbers.includes(boardPos)) {
+                            buy = false;
+                        }
+                    });
                     if (exports.board[number].geliquideerd &&
                         currentPlayer.money - exports.board[number].huisprijs > 0) {
                         console.log(`      De speler koopt ${exports.board[number].naam} terug van liquidatie voor ${exports.board[number].aankoopprijs / 2} euro.`);
@@ -777,10 +885,11 @@ function buyHouses(currentPlayer) {
                     }
                     else if (currentPlayer.money - exports.board[number].huisprijs > 0 &&
                         exports.board[number].tier < 4 &&
-                        !exports.board[number].geliquideerd) {
+                        !exports.board[number].geliquideerd &&
+                        buy) {
                         console.log(`      De speler kocht een huis op de straat: ${exports.board[number].naam} voor ${exports.board[number].huisprijs} euro. Er staan nu ${exports.board[number].tier + 1} huizen op die straat.`);
                         exports.board[number].tier++;
-                        currentPlayer.money - exports.board[number].huisprijs;
+                        currentPlayer.money -= exports.board[number].huisprijs;
                     }
                 }
             });
@@ -788,6 +897,24 @@ function buyHouses(currentPlayer) {
         case "ifLessThen20PercentOfMoney":
             currentPlayer.ownedNumbers.forEach((number) => {
                 if (typeof exports.board[number] === "object") {
+                    let buy = true;
+                    let sameColorStreets = [];
+                    let sameColorStreetsBoardPos = [];
+                    exports.streets.forEach((streetElement) => {
+                        if (streetElement.kleur === exports.board[number].kleur) {
+                            sameColorStreets.push(streetElement);
+                            exports.board.forEach((element, i) => {
+                                if (element == streetElement) {
+                                    sameColorStreetsBoardPos.push(i);
+                                }
+                            });
+                        }
+                    });
+                    sameColorStreetsBoardPos.forEach((boardPos) => {
+                        if (!currentPlayer.ownedNumbers.includes(boardPos)) {
+                            buy = false;
+                        }
+                    });
                     if (exports.board[number].geliquideerd &&
                         currentPlayer.money * 0.2 > exports.board[number].huisprijs &&
                         currentPlayer.money - exports.board[number].huisprijs > 0) {
@@ -797,10 +924,12 @@ function buyHouses(currentPlayer) {
                     }
                     else if (currentPlayer.money - exports.board[number].huisprijs > 0 &&
                         currentPlayer.money * 0.2 > exports.board[number].huisprijs &&
-                        !exports.board[number].geliquideerd) {
+                        !exports.board[number].geliquideerd &&
+                        exports.board[number].tier < 5 &&
+                        buy) {
                         console.log(`      De speler kocht een huis op de straat: ${exports.board[number].naam} voor ${exports.board[number].huisprijs} euro. Er staan nu ${exports.board[number].tier + 1} huizen op die straat.`);
                         exports.board[number].tier++;
-                        currentPlayer.money - exports.board[number].huisprijs;
+                        currentPlayer.money -= exports.board[number].huisprijs;
                     }
                 }
             });
