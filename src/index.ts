@@ -2,7 +2,7 @@ import { end, playRound } from "./round";
 import { initializeGame, players } from "./initialize";
 import fs from "fs";
 
-const numberOfRounds = 50;
+const numberOfRounds = 200;
 
 function main() {
   initializeGame();
@@ -28,4 +28,7 @@ function main() {
   });
 }
 
-main();
+let i;
+for (i = 0; i < 100000; i++) {
+  main();
+}

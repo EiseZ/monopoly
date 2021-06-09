@@ -5,7 +5,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.initializeGame = exports.stations = exports.players = void 0;
 const player_1 = __importDefault(require("./player"));
-const fs_1 = __importDefault(require("fs"));
 const startingMoney = 1500;
 const player1ai = {
     buyStation: "no",
@@ -118,10 +117,6 @@ function initializeGame() {
     player4ai.buyStreet = buyStreetAiOptions[random];
     random = Math.floor(Math.random() * buyHouseAiOptions.length);
     player4ai.buyHouse = buyHouseAiOptions[random];
-    fs_1.default.writeFile("output", `Ai's:\nSpeler 1:\nKoop straat: ${player1ai.buyStreet}\nKoop Huis: ${player1ai.buyHouse}\nKoop station: ${player1ai.buyStation}\nMaximale veiling prijs: ${player1ai.auctionMaxPrice}\n\n
-    Speler 2:\nKoop straat: ${player2ai.buyStreet}\nKoop Huis: ${player2ai.buyHouse}\nKoop station: ${player2ai.buyStation}\nMaximale veiling prijs: ${player2ai.auctionMaxPrice}\n\n
-    Speler 3:\nKoop straat: ${player3ai.buyStreet}\nKoop Huis: ${player3ai.buyHouse}\nKoop station: ${player3ai.buyStation}\nMaximale veiling prijs: ${player3ai.auctionMaxPrice}\n\n
-    Speler 4:\nKoop straat: ${player4ai.buyStreet}\nKoop Huis: ${player4ai.buyHouse}\nKoop station: ${player4ai.buyStation}\nMaximale veiling prijs: ${player4ai.auctionMaxPrice}\n\n`, { flag: "a" }, (_) => { });
 }
 exports.initializeGame = initializeGame;
 //# sourceMappingURL=initialize.js.map

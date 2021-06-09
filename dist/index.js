@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const round_1 = require("./round");
 const initialize_1 = require("./initialize");
 const fs_1 = __importDefault(require("fs"));
-const numberOfRounds = 50;
+const numberOfRounds = 200;
 function main() {
     initialize_1.initializeGame();
     let i;
@@ -26,5 +26,8 @@ function main() {
         }
     });
 }
-main();
+let i;
+for (i = 0; i < 100000; i++) {
+    main();
+}
 //# sourceMappingURL=index.js.map
