@@ -17,19 +17,8 @@ function main() {
         }
         else {
             console.log("\n\n\n Er is een winnaar \n\n\n");
-            initialize_1.players.forEach((player) => {
-                if (!player.failliet && player.money != undefined) {
-                    fs_1.default.writeFile("output", `De winnaar was speler ${player.number}.\n\n\n\n`, { flag: "a" }, (_) => { });
-                }
-                else if (player.money != undefined) {
-                    fs_1.default.writeFile("output", `Er was een error, dit spel telt niet.\n\n\n\n`, { flag: "a" }, (_) => { });
-                }
-            });
             break;
         }
-    }
-    if (!round_1.end) {
-        fs_1.default.writeFile("output", `Er was geen winnaar na ${numberOfRounds} rondes.\n\n\n\n`, { flag: "a" }, (_) => { });
     }
     initialize_1.players.forEach((player) => {
         if (!player.failliet && player.money != undefined) {
@@ -37,6 +26,5 @@ function main() {
         }
     });
 }
-fs_1.default.writeFile("output", `Het spel begint:\n`, { flag: "a" }, (_) => { });
 main();
 //# sourceMappingURL=index.js.map

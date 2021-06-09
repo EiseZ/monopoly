@@ -2998,3 +2998,31 @@ Er was geen winnaar na 50 rondes.
 
 
 
+Ai's:
+Speler 1:
+Koop straat: ownNotMoreThen10
+Koop Huis: upTo3
+Koop station: 3boughtOrLess
+Maximale veiling prijs: quadruple
+
+
+    Speler 2:
+Koop straat: no
+Koop Huis: no
+Koop station: 2boughtOrLess
+Maximale veiling prijs: 70PercentMore
+
+
+    Speler 3:
+Koop straat: always
+Koop Huis: ifLessThen20PercentOfMoney
+Koop station: noneBought
+Maximale veiling prijs: dontBuy
+
+
+    Speler 4:
+Koop straat: always
+Koop Huis: always
+Koop station: 1boughtOrLess
+Maximale veiling prijs: quadruple
+
